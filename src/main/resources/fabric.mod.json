@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "createfirearms",
+  "version": "${version}",
+  "name": "Create's Firearms",
+  "description": "Adds firearms to the Create mod.",
+  "authors": [
+    "Emmet_v15#4596"
+  ],
+  "contact": {
+    "sources": "https://github.com/Fabricators-of-Create/create-fabric-addon-template"
+  },
+  "license": "CC0",
+  "icon": "assets/createfirearms/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "studio.v15.createfirearms.ExampleMod"
+    ]
+  },
+  "mixins": [
+    "createfirearms.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": ">=${fabric_version}",
+    "create": ">=${create_version}",
+    "minecraft": ">=${minecraft_version}",
+    "java": ">=${java_version}"
+  }
+}
