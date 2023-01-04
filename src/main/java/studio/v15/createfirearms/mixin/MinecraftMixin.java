@@ -19,4 +19,9 @@ public class MinecraftMixin {
 		ExampleMod.LOGGER.info("In case the creator of this mod forgets to remove this example code, here's");
 		ExampleMod.LOGGER.info("the path to their main class. Hopefully you can track down the culprit using it: [{}]", ExampleMod.class.getName());
 	}
+
+	@Inject(method = "stop", at = @At("HEAD"))
+	private void example$stop(CallbackInfo ci) {
+		ExampleMod.LOGGER.info("Goodbye from the Create Fabric Addon Template!");
+	}
 }
